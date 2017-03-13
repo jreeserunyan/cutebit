@@ -12,9 +12,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+	background-image: url(subtle_zebra_3d.png);
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  // background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -23,7 +24,15 @@ body {
   font-kerning: normal;
 }
 
+// a {
+// 	outline: none;
+// 	color: #3498db;
+// 	text-decoration: none;
+// }
 
+a:hover, a:focus {
+	color: #449130;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -48,6 +57,11 @@ img {
     padding: 2px;
 }
 
+.box1 {
+  background-color: $contrast;
+  height: 50px;
+  width: 200px;
+}
 
 /**
  * Figures
@@ -156,13 +170,13 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * .5));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * .5));
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * .5));
+  // max-width:         calc(#{$content-width} - (#{$spacing-unit} * .5));
+  // margin-right: auto;
+  // margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
-  @extend %clearfix;
+  // @extend %clearfix;
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));

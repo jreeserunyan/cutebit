@@ -1,25 +1,64 @@
 ---
-layout: default
+layout: base
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+<div id="draggable" class="box1"><h1 class="animated bounce">Product</h1></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+<div class="content">
+  <div class="grid">
+    <figure class="effect-ming">
+      <img src="/assets/img3.jpg" alt="img3"/>
+      <figcaption>
+        <h2>the<span>original</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+    <figure class="effect-ming">
+      <img src="/assets/img12-orange.png" alt="img12"/>
+      <figcaption>
+        <h2>ank<span>let</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+    <figure class="effect-ming">
+      <img src="/assets/img12.jpg" alt="img12"/>
+      <figcaption>
+        <h2>ear<span>stud</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+  </div>
+    <div class="grid">
+    <figure class="effect-ming">
+      <img src="/assets/img12.jpg" alt="img12"/>
+      <figcaption>
+        <h2>dia<span>gram</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+    <figure class="effect-ming">
+      <img src="/assets/img12.jpg" alt="img12"/>
+      <figcaption>
+        <h2>the <span>algorithm</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+    <figure class="effect-ming">
+      <img src="/assets/img12.jpg" alt="img12"/>
+      <figcaption>
+        <h2>the <span>app</span></h2>
+        <p>Each and every friend is special. ming won't hide a single cookie.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+  </div>
 </div>
+
+   {% include team.html %}
