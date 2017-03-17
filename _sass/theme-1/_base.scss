@@ -48,8 +48,10 @@ ul, ol, dl, figure,
  * Images
  */
 img {
+  height: auto !important; 
   max-width: 100%;
   vertical-align: middle;
+  width: auto;
 }
 
 .logo {
@@ -167,26 +169,44 @@ pre {
 
 
 /**
- * Wrapper
+ * Wrapper - version 1
  */
-.wrapper {
+// .wrapper {
   // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * .5));
   // max-width:         calc(#{$content-width} - (#{$spacing-unit} * .5));
   // margin-right: auto;
   // margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  // padding-right: $spacing-unit;
+  // padding-left: $spacing-unit;
   // @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
+//   @include media-query($on-laptop) {
+//     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+//     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+
+//  * Wrapper - version 2
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr 6fr;
+  // -ms-grid-col: 3fr 1fr 1fr;
+  // grid-template-rows: 1fr 3fr;
+  // -ms-grid-row: 1fr 3fr;
+
 }
+    // width: 100%;
+    // margin: 0 auto;
 
-
+// .wrapper:after,
+// .row:after {
+//       content: "";
+//       display: table;
+//       clear: both; 
+//       }
 
 /**
  * Clearfix
@@ -196,6 +216,14 @@ pre {
   display: table;
   clear: both;
 }
+
+// // * Columns
+// [class*='column-'] {
+//     float: left;
+//     padding: 1em;
+//     width: 100%;
+//     min-height: 1px; 
+//     }
 
 
 

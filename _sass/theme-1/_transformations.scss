@@ -1,0 +1,67 @@
+// @import "neat/neat";
+
+.toggle-details {
+    // background: $cobalt;
+    display: none;
+    // height: 500px;
+    // padding-left: 5%;
+    padding-right: 5%;
+    // box-shadow: 3px 3px 5px 20px $dark inset;
+}
+.closed {
+    visibility: hidden;
+}
+
+.btn-close {
+    right: 20px;
+    top: -40px;
+}
+.vertical-title {
+    background-color: $contrast;
+    font-size: 3em;
+    // height: 100%
+    padding: 15px;
+    text-align: center;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    // width: 1.5em;
+    writing-mode: tb-rl;
+}
+
+.product-content {
+    background-image: url("diamond_upholstery.png");
+    padding: 5%;
+    // width: 40%;
+    clear: right;
+    // float: left;
+        h3 {
+         font-family: $header-font-family;   
+        font-size: $base-font-size * 2;
+        color: $contrast;
+        font-weight: 600;
+        }
+        h5 {
+        font-family: $base-font-family;   
+        font-size: $base-font-size * 1.5;
+        color: $cobalt;
+        text-transform: uppercase;
+        }
+        p {
+        line-height: $base-line-height * 1.1;
+        margin-bottom: 1em;
+       
+        }
+}
+
+.product-image {
+    // background-image: url("img1.jpg");
+    // height: 500px;
+    padding-left: 5%;
+    // vertical-align: middle;
+    // width: auto;
+}
+
+.product-container {
+    // box-shadow: 3px 3px 5px 20px $dark;
+}
+

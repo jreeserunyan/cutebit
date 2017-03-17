@@ -2,13 +2,15 @@
  * Site header
  */
 .site-header {
-  border-top: 2px solid $contrast;
+  // border-top: 2px solid $contrast;
   background-color: $cobalt;
   padding-left: 1%;
   padding-right: 1%;
   // Positioning context for the mobile navigation icon
   position: relative;
-  box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+  // box-shadow: 0 0 0 90px rgba(255,255,255,0.2);
+  box-shadow: 2px 2px 2px 5px $dark;
+  opacity: .9;
 }
 
 .site-title {
@@ -181,7 +183,7 @@
 }
 
 .gradient {
-  background: linear-gradient(#1e5799, #2989d8);
+  background: linear-gradient($grey-color, #fff);
 }
 .post-meta {
   font-size: $small-font-size;
@@ -242,16 +244,16 @@
 
 // grid formatting
 
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	/*padding: 1em 0 4em;*/
-	/*max-width: 1000px;*/
-	list-style: none;
-	text-align: center;
-  font-family: $header-font-family;
-}
+// .grid {
+// 	position: relative;
+// 	clear: both;
+// 	margin: 0 auto;
+// 	/*padding: 1em 0 4em;*/
+// 	/*max-width: 1000px;*/
+// 	list-style: none;
+// 	text-align: center;
+//   font-family: $header-font-family;
+// }
 
 /* Common style */
 .grid figure {
@@ -263,7 +265,7 @@
 	min-width: 320px;
 	max-width: 480px;
 	max-height: 360px;
-	width: 33.3%;
+	width: 33.333%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -339,7 +341,7 @@
 /*---------------*/
 
 figure.effect-ming {
-	background: white;
+	background: $dark;
 }
 
 figure.effect-ming img {
@@ -355,7 +357,7 @@ figure.effect-ming figcaption::before {
 	bottom: 30px;
 	left: 30px;
 	border: 2px solid #fff;
-	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	box-shadow: 0 0 0 30px rgba(255,255,255,.1);
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

@@ -1,2 +1,2 @@
 # cutebit
-###Sample application created for amusemnet
+###Sample application created for entertainment purposes

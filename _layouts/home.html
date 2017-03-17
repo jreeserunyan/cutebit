@@ -2,13 +2,10 @@
 layout: base
 ---
 
-<div class="home">
-
-<div id="draggable" class="box1"><h1 class="animated bounce">Product</h1></div>
-
-<div class="content">
+<h1 class="animated bounce">Product</h1>
+<!--<div class="content">-->
   <div class="grid">
-    <figure class="effect-ming">
+    <figure id="product-1" class="effect-ming">
       <img src="/assets/img3.jpg" alt="img3"/>
       <figcaption>
         <h2>the<span>original</span></h2>
@@ -16,7 +13,7 @@ layout: base
         <a href="#">View more</a>
       </figcaption>			
     </figure>
-    <figure class="effect-ming">
+    <figure id="product-2" class="effect-ming">
       <img src="/assets/img12-orange.png" alt="img12"/>
       <figcaption>
         <h2>ank<span>let</span></h2>
@@ -24,7 +21,7 @@ layout: base
         <a href="#">View more</a>
       </figcaption>			
     </figure>
-    <figure class="effect-ming">
+    <figure id="product-3" class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
       <figcaption>
         <h2>ear<span>stud</span></h2>
@@ -33,6 +30,15 @@ layout: base
       </figcaption>			
     </figure>
   </div>
+
+  <div id="show-1" class="toggle-details">{% include product-1.html %}</div>
+  <div id="show-2" class="toggle-details">two</div>
+  <div id="show-3" class="toggle-details">three</div>
+  <div id="show-4" class="toggle-details">four</div>
+  <div id="show-5" class="toggle-details">five</div>
+  <div id="show-6" class="toggle-details">six</div>
+
+
     <div class="grid">
     <figure class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
@@ -59,6 +65,3 @@ layout: base
       </figcaption>			
     </figure>
   </div>
-</div>
-
-   {% include team.html %}

@@ -10,7 +10,7 @@ ruby RUBY_VERSION
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "3.4.1"
-
+gem "neat"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "theme-1", "~> 2.0"
 

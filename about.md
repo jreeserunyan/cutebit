@@ -1,8 +1,5 @@
 ---
-layout: base
-title: team
+layout: default
+title: about
 permalink: /about/
 ---
-what's this
- and more and more
- and none.
