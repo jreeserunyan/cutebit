@@ -1,21 +1,22 @@
-// @import "neat/neat";
+@import "media";
 
 .toggle-details {
-    // background: $cobalt;
     display: none;
-    // height: 500px;
-    // padding-left: 5%;
     padding-right: 5%;
-    // box-shadow: 3px 3px 5px 20px $dark inset;
-}
-.closed {
-    visibility: hidden;
 }
 
-.btn-close {
-    right: 20px;
-    top: -40px;
+@media #{$large-and-up} {
+   .sm {
+        display: none;
+    }
 }
+
+// @media #{$medium-and-down} {
+//     .sm {
+//         width: 100%;
+//     }
+// }
+    // trying to work out how to slide down in the right place on mobile
 .vertical-title {
     background-color: $contrast;
     font-size: 3em;
@@ -35,21 +36,20 @@
     clear: right;
     // float: left;
         h3 {
-         font-family: $header-font-family;   
-        font-size: $base-font-size * 2;
+        font-family: $header-font-family;   
+        font-size: $base-font-size * 1.5;
         color: $contrast;
         font-weight: 600;
         }
         h5 {
         font-family: $base-font-family;   
-        font-size: $base-font-size * 1.5;
+        font-size: $base-font-size * 1;
         color: $cobalt;
         text-transform: uppercase;
         }
         p {
         line-height: $base-line-height * 1.1;
         margin-bottom: 1em;
-       
         }
 }
 
@@ -61,7 +61,28 @@
     // width: auto;
 }
 
-.product-container {
+// .product-container {
     // box-shadow: 3px 3px 5px 20px $dark;
+// }
+
+h2 {
+    font-size: $base-font-size;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 50em) {
+	.toggle-details {
+        flex-flow: row wrap;
+		// display: inline-block;
+        margin: 10px auto;
+		width: 100%;
+	}
+	// .grid figure {
+	// 	display: inline-block;
+	// 	// float: none;
+	// 	margin: 10px auto;
+	// 	width: 100%;
+	// }
 }
 

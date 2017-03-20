@@ -6,9 +6,37 @@ $(document).ready(function() {
 
 // product display
 
+
 	$( "#product-1" ).click(function() {
-		$( "#show-1" ).toggle("slow");
+		$( "#show-1" ).slideToggle("slow");
 	});
+
+	$( "#show-1" ).click(function() {
+		$( "#show-1" ).slideToggle("slow");
+	});
+
+
+	// $( "#show-1" ).click(function() {
+	// // 	self.location.reload();
+	// 	$( ".wrapper" ).toggle("slow");
+	// });
+
+// function myFunction() {
+//     var swap = document.getElementById('show-1');
+//     if (swap.style.display === 'none') {
+//         swap.style.display = 'block';
+//     } else {
+//         swap.style.display = 'none';
+//     }
+// }
+
+// myFunction;
+  
+	// $( "#product-1" ).click(function() {
+	// 	location.reload();
+	// });
+
+	// --
 
 	$( "#product-2" ).click(function() {
 		$( "#show-2" ).toggle("slow");
@@ -29,7 +57,22 @@ $(document).ready(function() {
 	$( "#product-6" ).click(function() {
 		$( "#show-6" ).toggle("slow");
 	});
+
+
+
+	// $( "#product-1" ).click(function() {
+	// 		window.location.reload();
+	// });
+
+// $( ".wrapper" ).click(function() {
+// 	});
+		// window.location.reload();
+		
+
+
+
 });
 
 
 
+		// $ ( ".wrapper" ).toggle("slow");
