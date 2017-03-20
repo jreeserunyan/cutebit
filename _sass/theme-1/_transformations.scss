@@ -1,21 +1,25 @@
 @import "media";
 
 .toggle-details {
+    background-color: $cobalt;
     display: none;
-    padding-right: 5%;
+    padding: 10px;
 }
 
-@media #{$large-and-up} {
-   .sm {
-        display: none;
+.mobile {
+    padding: 5px;
+    clear: both;
+}
+
+@media #{$medium-and-up} {
+    #show-1 .mobile {
+        display:block;
+    }
+    #show-1 {
+        display:none;
     }
 }
 
-// @media #{$medium-and-down} {
-//     .sm {
-//         width: 100%;
-//     }
-// }
     // trying to work out how to slide down in the right place on mobile
 .vertical-title {
     background-color: $contrast;
@@ -28,7 +32,16 @@
     // width: 1.5em;
     writing-mode: tb-rl;
 }
-
+@media #{$medium-and-down} {
+    .vertical-title {
+    background-color: $contrast;
+    font-size: 2em;
+    padding: 0px;
+    transform: none;
+    vertical-align: center;
+    writing-mode: initial;
+    }
+}
 .product-content {
     background-image: url("diamond_upholstery.png");
     padding: 5%;
@@ -56,9 +69,9 @@
 .product-image {
     // background-image: url("img1.jpg");
     // height: 500px;
-    padding-left: 5%;
+    // padding-left: 5%;
     // vertical-align: middle;
-    // width: auto;
+    width: auto;
 }
 
 // .product-container {
@@ -71,18 +84,18 @@ h2 {
 }
 
 
-@media screen and (max-width: 50em) {
-	.toggle-details {
-        flex-flow: row wrap;
-		// display: inline-block;
-        margin: 10px auto;
-		width: 100%;
-	}
-	// .grid figure {
-	// 	display: inline-block;
-	// 	// float: none;
-	// 	margin: 10px auto;
-	// 	width: 100%;
-	// }
-}
+// @media screen and (max-width: 50em) {
+// 	.toggle-details {
+//         flex-flow: row wrap;
+// 		// display: inline-block;
+//         margin: 10px auto;
+// 		width: 100%;
+// 	}
+// 	// .grid figure {
+// 	// 	display: inline-block;
+// 	// 	// float: none;
+// 	// 	margin: 10px auto;
+// 	// 	width: 100%;
+// 	// }
+// }
 

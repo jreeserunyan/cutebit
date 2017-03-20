@@ -8,10 +8,21 @@ $(document).ready(function() {
 
 
 	$( "#product-1" ).click(function() {
+		$( "#product-1" ).hide();
 		$( "#show-1" ).slideToggle("slow");
+		// $( "#show-1" ).slideToggle("slow");
+		// if $( ".lg" ).insertAfter( $( "grid" ) 
+		// );
 	});
 
+	// $( "#product-1" ).click(function() {
+	// 	$( "#show-1" ).slideToggle("slow");
+	// 	// if $( ".lg" ).insertAfter( $( "grid" ) 
+	// 	// );
+	// });
+
 	$( "#show-1" ).click(function() {
+				$( "#product-1" ).show(1000);
 		$( "#show-1" ).slideToggle("slow");
 	});
 
