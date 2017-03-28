@@ -1,0 +1,37 @@
+@keyframes hideshow {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+} 
+
+#solid {
+  opacity: 1;
+  animation: hideshow 5s 1.5s ease infinite;
+  // animation-play-state: running;
+}
+
+#outline {
+  opacity: 0;
+  animation: hideshow 5s 1.5s ease infinite;
+}
+
+// #l1, #r9, #l4, #r8, #l9 
+// // #eleven, #noon, #one, #five, #six, #seven 
+// {
+//   opacity: 0;
+//   animation: hideshow 5s 1.5s ease infinite;
+// }
+
+// #two, #three, #four, #eight, #nine, #ten {
+//   opacity: 1;
+//   animation: hideshow 3s 1.5s ease infinite;
+// }
+
+.icon-svg {
+  // height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
