@@ -1,5 +1,15 @@
 h1 {
-  text-align: center;
+  color: $contrast;
+  font-size: $base-font-size * 3;
+}
+
+h3 {
+  font-size: $base-font-size * 2;
+}
+
+.container {
+  background-color: $light;
+  filter: drop-shadow(2px 8px 8px $dark);
 }
 
 .intro-container {
@@ -10,16 +20,48 @@ h1 {
   padding-bottom: 5%;
 }
 
+.team-container {
+    margin: 0 5px;
+      background: $grey-color-light;
+    // border-width: 10px 5px;
+} 
+
 .team {
   background: $grey-color-light;
-  border: 10pt solid $light;
+  border: 5pt solid $light;
+  border-top: 10pt solid $light;
+  border-bottom: 10pt solid $light;
   padding: 20px;
 }
 
 .team-avatar {
   border-radius: 50%;
   background-image: url(diamond_upholstery.png);
-  max-width: 250px;
+  max-width: 200px;
   margin: auto;
   display: block;
+}
+
+.parallax { 
+ /* Set a specific height */
+    height: 400px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    }
+
+.parallax-txt {
+  // filter: drop-shadow(2px 8px 8px $light);
+  h1, h3 {
+  font-weight: 800;
+  }
+}
+.dog-1 {
+  background-image: url("andrew-branch-126770.jpg");
+}
+.cat-1 {
+  background-image: url("simone-dalmeri-114593.jpg");
 }

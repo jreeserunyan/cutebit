@@ -9,6 +9,7 @@
 	list-style: none;
 	text-align: center;
   font-family: $base-font-family;
+	// filter: drop-shadow(2px -8px 8px $dark);
 }
 
 /* Common style */
@@ -26,6 +27,7 @@
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	
 }
 
 .grid figure img {
