@@ -38,7 +38,7 @@ $cobalt-light: lighten($contrast, 60%) !default;
 $cobalt-dark:  darken($contrast, 25%) !default;
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1000px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -65,7 +65,12 @@ $on-laptop:        800px;
   "theme-1/base",
   "theme-1/layout",
   "theme-1/syntax-highlighting",
-  "theme-1/transformations",
+  "theme-1/product",
+  "theme-1/media",
+  "theme-1/grid",
   "theme-1/details",
-  "theme-1/media"
+  "theme-1/animate",
+  "theme-1/intro",
+  "theme-1/trg",
+  "theme-1/footer"
 ;

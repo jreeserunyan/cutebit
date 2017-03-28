@@ -4,8 +4,10 @@ layout: base
 
 <!--<h1 class="animated bounce">Product</h1>-->
 <div class="content">
-  <div class="grid">
+<div class="grid">
+<div class="container">
 
+  <div class="col span-4-d span-6-t">
     <figure id="product-1" class="effect-ming">
       <img src="/assets/img3.jpg" alt="img3"/>
       <figcaption>
@@ -14,11 +16,11 @@ layout: base
         <a href="#">View more</a>
       </figcaption>		
     </figure>
+  </div>
 
   <div id="show-1" class="toggle-details mobile">{% include product-1.html %}</div>
 
-
-
+  <div class="col span-4-d span-6-t">
     <figure id="product-2" class="effect-ming">
       <img src="/assets/img12-orange.png" alt="img12"/>
       <figcaption>
@@ -27,7 +29,9 @@ layout: base
         <a href="#">View more</a>
       </figcaption>			
     </figure>
+  </div>
 
+  <div class="col span-4-d span-6-t">
     <figure id="product-3" class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
       <figcaption>
@@ -46,8 +50,7 @@ layout: base
   <div id="show-5" class="toggle-details">five</div>
   <div id="show-6" class="toggle-details">six</div>
 
-
-    <div class="grid">
+  <div class="col span-4-d span-6-t">
     <figure class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
       <figcaption>
@@ -56,6 +59,9 @@ layout: base
         <a href="#">View more</a>
       </figcaption>			
     </figure>
+  </div>
+
+  <div class="col span-4-d span-6-t">
     <figure class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
       <figcaption>
@@ -64,6 +70,9 @@ layout: base
         <a href="#">View more</a>
       </figcaption>			
     </figure>
+  </div>
+
+  <div class="col span-4-d span-6-t">
     <figure class="effect-ming">
       <img src="/assets/img12.jpg" alt="img12"/>
       <figcaption>
@@ -73,4 +82,9 @@ layout: base
       </figcaption>			
     </figure>
   </div>
+
 </div>
+</div>
+</div>
+
+  {% include team.html %}
