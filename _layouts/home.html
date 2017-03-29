@@ -4,7 +4,7 @@ layout: base
   
 <!--<h1 class="animated bounce">Product</h1>-->
 <div class="content">
-  <div class="parallax dog-1">
+  <div class="parallax sad-eyed-pup">
     <div class="parallax-txt">
       <h1>How cute is this dog?</h1>
       <h3>Cute? Very cute?</h3>   
@@ -12,6 +12,7 @@ layout: base
       <h1>100iCute</h1>
     </div>
   </div>
+<a name="product-1" class="self-link"></a> 
 <div class="grid">
 <div class="container">
 
@@ -21,12 +22,13 @@ layout: base
       <figcaption>
         <h2>the<span>original</span></h2>
         <p>Each and every friend is special. ming won't hide a single cookie.</p>
-        <a href="#">View more</a>
+        <p><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></p>
+        <a href="#product-1"></a>
       </figcaption>		
     </figure>
   </div>
 
-  <div id="show-1" class="toggle-details mobile">{% include product-1.html %}</div>
+  <div class="toggle-details-sm">{% include product-1.html %}</div>
 
   <div class="col span-4-d span-6-t">
     <figure id="product-2" class="effect-ming">
@@ -50,7 +52,7 @@ layout: base
     </figure>
   </div>
 
-  <!--<div id="show-1" class="toggle-details">{% include product-1.html %}</div>-->
+<div id="show-1" class="toggle-details">{% include product-1.html %}</div>
 
   <div id="show-2" class="toggle-details">two</div>
   <div id="show-3" class="toggle-details">three</div>

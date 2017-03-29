@@ -6,47 +6,15 @@ $(document).ready(function() {
 
 // product display
 
-	$( "#product-1" ).click(function() {
-		$( "#product-1" ).hide();
-		$( "#show-1" ).slideToggle("slow");
-		// $( "#show-1" ).slideToggle("slow");
-		// if $( ".lg" ).insertAfter( $( "grid" ) 
-		// );
-	});
+$( "#product-1" ).click(function() {
+	$( "#show-1" ).toggle("fast");
+});
 
-	// $( "#product-1" ).click(function() {
-	// 	$( "#show-1" ).slideToggle("slow");
-	// 	// if $( ".lg" ).insertAfter( $( "grid" ) 
-	// 	// );
-	// });
-
-	$( "#show-1" ).click(function() {
-				$( "#product-1" ).show(1000);
-		$( "#show-1" ).slideToggle("slow");
-	});
+$( "#show-1" ).click(function() {
+	$( "#show-1" ).toggle("fast");
+});
 
 
-	// $( "#show-1" ).click(function() {
-	// // 	self.location.reload();
-	// 	$( ".wrapper" ).toggle("slow");
-	// });
-
-// function myFunction() {
-//     var swap = document.getElementById('show-1');
-//     if (swap.style.display === 'none') {
-//         swap.style.display = 'block';
-//     } else {
-//         swap.style.display = 'none';
-//     }
-// }
-
-// myFunction;
-  
-	// $( "#product-1" ).click(function() {
-	// 	location.reload();
-	// });
-
-	// --
 
 	$( "#product-2" ).click(function() {
 		$( "#show-2" ).toggle("slow");

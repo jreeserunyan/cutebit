@@ -4,7 +4,57 @@
     background-color: $cobalt;
     display: none;
     padding: 10px;
+    filter: drop-shadow(0px -8px 10px 10px $dark);
 }
+
+// .toggle-details sm {
+//     background-color: $cobalt;
+//     visibility: visible;
+//     display: block;
+//     padding: 10px;
+//     filter: drop-shadow(0px -8px 10px 10px $dark);
+// }
+
+// #show-1 lg {
+//     visibility: hidden;
+// }
+
+.toggle-details-sm {
+    visibility: visible;
+    display: block;
+  @media (min-width: 50em) {
+    visibility: hidden;
+    display: none;
+    grid-template-columns: none;
+  }
+}
+
+// @media not all and (max-width: 400px) {
+//     .toggle-detail-sm {
+//         background-color: $cobalt;
+//         visibility: visible;
+//         display: block;
+//         padding: 10px;
+//         filter: drop-shadow(0px -8px 10px 10px $dark);
+//     }
+// }
+
+
+
+
+// $width:auto;
+// @mixin clearfix($width) {
+
+//    @if $width == 'auto' {
+
+//     // if width is not passed, or empty do this
+
+//    } @else {
+//         display: inline-block;
+//         width: $width;
+//    }
+// }
+
 
 .mobile {
     padding: 5px;
@@ -50,14 +100,14 @@
     // float: left;
         h3 {
         font-family: $header-font-family;   
-        font-size: $base-font-size * 1.5;
+        font-size: $base-font-size * 2;
         color: $contrast;
         font-weight: 600;
         }
         h5 {
         font-family: $base-font-family;   
-        font-size: $base-font-size * 1;
-        color: $cobalt;
+        font-size: $base-font-size * 1.5;
+        color: $tomato;
         text-transform: uppercase;
         }
         p {
@@ -83,7 +133,9 @@ h2 {
     text-transform: uppercase;
 }
 
-
+// .self-link {
+//     padding-top: 80px;
+// }
 // @media screen and (max-width: 50em) {
 // 	.toggle-details {
 //         flex-flow: row wrap;
