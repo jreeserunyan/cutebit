@@ -13,6 +13,22 @@
 }
 
 /* Common style */
+// .grid figure {
+// 	position: relative;
+// 	float: left;
+// 	overflow: hidden;
+// 	/*margin: 10px 1%;*/
+// 	margin-bottom: 0;
+// 	min-width: 200px;
+	
+// 	max-width: 480px;
+// 	// width: 33.333%;
+// 	// height: auto;
+// 	background: #3085a3;
+// 	text-align: center;
+// 	cursor: pointer;
+	
+// }
 .grid figure {
 	position: relative;
 	float: left;
@@ -128,6 +144,9 @@ figure.effect-ming h2 {
 	margin: 30% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	// @media (min-width: 50em) {
+	// 	margin: 20% 0 10px 0;
+  // }
 }
 
 figure.effect-ming p {
@@ -167,12 +186,13 @@ figure.effect-ming:hover img {
 @media screen and (max-width: 900px) {
 	.content {
 		// padding: 0 10px;
-		text-align: center;
+		// text-align: center;
 	}
 	.grid figure {
 		display: inline-block;
 		margin: 0px auto;
 		width: 100%;
+		min-width: 320px;
 	}
 }
 

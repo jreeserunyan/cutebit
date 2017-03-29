@@ -7,18 +7,6 @@
     filter: drop-shadow(0px -8px 10px 10px $dark);
 }
 
-// .toggle-details sm {
-//     background-color: $cobalt;
-//     visibility: visible;
-//     display: block;
-//     padding: 10px;
-//     filter: drop-shadow(0px -8px 10px 10px $dark);
-// }
-
-// #show-1 lg {
-//     visibility: hidden;
-// }
-
 .toggle-details-sm {
     visibility: visible;
     display: block;
@@ -29,48 +17,6 @@
   }
 }
 
-// @media not all and (max-width: 400px) {
-//     .toggle-detail-sm {
-//         background-color: $cobalt;
-//         visibility: visible;
-//         display: block;
-//         padding: 10px;
-//         filter: drop-shadow(0px -8px 10px 10px $dark);
-//     }
-// }
-
-
-
-
-// $width:auto;
-// @mixin clearfix($width) {
-
-//    @if $width == 'auto' {
-
-//     // if width is not passed, or empty do this
-
-//    } @else {
-//         display: inline-block;
-//         width: $width;
-//    }
-// }
-
-
-.mobile {
-    padding: 5px;
-    clear: both;
-}
-
-@media #{$medium-and-up} {
-    #show-1 .mobile {
-        display:block;
-    }
-    #show-1 {
-        display:none;
-    }
-}
-
-    // trying to work out how to slide down in the right place on mobile
 .vertical-title {
     background-color: $contrast;
     font-size: 3em;
@@ -95,9 +41,7 @@
 .product-content {
     background-image: url("diamond_upholstery.png");
     padding: 5%;
-    // width: 40%;
     clear: right;
-    // float: left;
         h3 {
         font-family: $header-font-family;   
         font-size: $base-font-size * 2;
@@ -117,11 +61,13 @@
 }
 
 .product-image {
-    // background-image: url("img1.jpg");
-    // height: 500px;
-    // padding-left: 5%;
-    // vertical-align: middle;
-    width: auto;
+    width: auto; 
+    visibility: hidden;
+    display: none;
+  @media (min-width: 50em) {
+    visibility: visible;
+    display: block;
+  }
 }
 
 .product-container {
