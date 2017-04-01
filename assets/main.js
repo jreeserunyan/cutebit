@@ -14,6 +14,16 @@ $( "#show-1" ).click(function() {
 	$( "#show-1" ).toggle("fast");
 });
 
+$( "#product-1-sm" ).click(function() {
+	$( "#show-1-sm" ).toggle("fast");
+});
+
+$( "#show-1-sm" ).click(function() {
+	$( "#show-1-sm" ).toggle("fast");
+});
+
+
+
 
 
 	$( "#product-2" ).click(function() {

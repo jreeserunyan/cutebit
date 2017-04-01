@@ -4,38 +4,17 @@
 	position: relative;
 	clear: both;
 	margin: 0 auto;
-	/*padding: 1em 0 4em;*/
-	/*max-width: 1000px;*/
 	list-style: none;
-	// text-align: center;
   font-family: $base-font-family;
-	// filter: drop-shadow(2px -8px 8px $dark);
 }
 
-/* Common style */
-// .grid figure {
-// 	position: relative;
-// 	float: left;
-// 	overflow: hidden;
-// 	/*margin: 10px 1%;*/
-// 	margin-bottom: 0;
-// 	min-width: 200px;
-	
-// 	max-width: 480px;
-// 	// width: 33.333%;
-// 	// height: auto;
-// 	background: #3085a3;
-// 	text-align: center;
-// 	cursor: pointer;
-	
-// }
 .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	/*margin: 10px 1%;*/
 	margin-bottom: 0;
-	min-width: 320px;
+	// min-width: 320px;
 	// max-width: 480px;
 	max-height: 360px;
 	// width: 33.333%;
@@ -43,7 +22,9 @@
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
-	
+  @include media-query($on-palm) {
+    display: none;
+  }
 }
 
 .grid figure img {
@@ -93,6 +74,8 @@
 .grid figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
+  font-size: $base-font-size;
+  text-transform: uppercase;
 }
 
 .grid figure h2 span {
@@ -141,7 +124,7 @@ figure.effect-ming figcaption::before {
 }
 
 figure.effect-ming h2 {
-	margin: 30% 0 10px 0;
+	margin: 35% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	// @media (min-width: 50em) {
@@ -181,18 +164,21 @@ figure.effect-ming:hover img {
 }
 
 
-
 /* Media queries */
 @media screen and (max-width: 900px) {
-	.content {
-		// padding: 0 10px;
-		// text-align: center;
-	}
+  // figure.effect-ming h2 {
+  //   margin: 5% 0 10px 0;
+  // }
+  // figure.effect-ming p {
+  //   padding: 10px;
+  }
 	.grid figure {
-		display: inline-block;
-		margin: 0px auto;
-		width: 100%;
-		min-width: 320px;
+    // display: none;
+		// display: inline-block;
+		// margin: 0px auto;
+		// width: 100%;
+		// min-width: 320px;
+    // height: 175px;
 	}
-}
+// }
 

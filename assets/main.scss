@@ -9,6 +9,7 @@
 // * {
 //     border: 1pt solid red;
 // }
+
 // Our variables
 $base-font-family: 'Fira Sans', sans-serif !default;
 $base-font-size:   16px !default;
@@ -23,14 +24,12 @@ $dark:       #111 !default;
 $light:      #fdfdfd !default;
 $contrast:   #008390 !default;
 $tomato: #9E2800 !default;
+$granny-smith: #449130 !default;
 
-
+// shadow
+$dark-shadow-heavy: drop-shadow(2px 8px 8px $dark);
+$dark-shadow-top: drop-shadow(2px -8px 8px $dark);
 // $spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 45%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -40,7 +39,6 @@ $cobalt-dark:  darken($contrast, 25%) !default;
 
 // Width of the content area
 $content-width:    1000px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 
@@ -71,7 +69,7 @@ $on-laptop:        800px;
   "theme-1/grid",
   "theme-1/details",
   "theme-1/animate",
-  "theme-1/intro",
+  "theme-1/general",
   "theme-1/trg",
   "theme-1/footer"
 ;

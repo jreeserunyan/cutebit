@@ -15,8 +15,8 @@ dl, dd, ol, ul, figure {
 body {
 	// background-image: url(subtle_zebra_3d.png);
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: black;
+  color: $dark;
+  background-color: $light;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -32,7 +32,7 @@ body {
 // }
 
 a:hover, a:focus {
-	color: #449130;
+	color: $granny-smith;
 }
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -53,26 +53,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
   width: auto;
-}
-
-.logo {
-    max-height: 60px;
-    padding: 2px;
-}
-
-.box1 {
-  background-color: $contrast;
-  height: 50px;
-  width: 200px;
-}
-
-.main-logo {
-  background-image: url(subtle_zebra_3d.png);
-  height: 100%;
-  vertical-align: middle;
-  width: 100%;
-  // max-width: 100%;
-  // max-height: 100%; 
 }
 
 /**
@@ -118,15 +98,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $contrast;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($contrast, 15%);
   }
 
   &:hover {
-    color: $text-color;
+    color: $tomato;
     text-decoration: underline;
   }
 }
